@@ -1,16 +1,47 @@
-# React + Vite
+# React Currency Converter 💱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern currency converter built using **React + Vite**, styled with **Tailwind CSS**, and powered by **live exchange rates** from the Frankfurter API.
 
-Currently, two official plugins are available:
+This project focuses on **clean React architecture**, **custom hooks**, and **real-world state management**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Convert between multiple currencies in real time
+- Swap between “From” and “To” currencies
+- Live exchange rates via a public API
+- Custom React Hook for fetching data
+- Loading and error handling
+- Dark mode UI using Tailwind CSS
+- Fully controlled inputs
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Tech Stack
+
+- **React** (Functional Components & Hooks)
+- **Vite** (Fast build tool)
+- **Tailwind CSS**
+- **Frankfurter API** (Exchange rates)
+
+---
+
+## 🔁 How It Works
+
+- Exchange rates are fetched using a **custom hook (`useCurrencyInfo`)**
+- Rates are dynamically fetched based on the selected base currency
+- Conversion updates automatically when:
+  - amount changes
+  - currency selection changes
+  - new rates are fetched from the API
+
+---
+
+## ⚠️ Disclaimer
+
+Exchange rates are indicative and may differ slightly from other platforms due to:
+- different data providers
+- update frequency
+- rounding strategies
+
